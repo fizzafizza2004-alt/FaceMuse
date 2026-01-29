@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8F7"
+    android:padding="24dp"
+    tools:context=".UploadActivity">
+
+    <!-- Close Button -->
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnClose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Upload Image"
+        android:textColor="@color/textHeading"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Drop Zone -->
+    <LinearLayout
+        android:id="@+id/llDropZone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dashed_border_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="48dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#E7F3FE"
+            android:padding="20dp"
+            android:src="@android:drawable/ic_menu_upload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Upload a clear face image"
+            android:textColor="@color/textHeading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="JPG or PNG format"
+            android:textColor="@color/textSubheading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tap here to select an image from your device"
+            android:textColor="@color/textLink" />
+    </LinearLayout>
+
+    <!-- Best Results Tip -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llDropZone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@android:drawable/ic_menu_info_details"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="Best results: Clear lighting, no makeup, face clearly visible"
+        android:textColor="@color/textSubheading" />
+
+</RelativeLayout>

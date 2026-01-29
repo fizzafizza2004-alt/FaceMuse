@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer white circle border -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <!-- Gradient circle, inset to create the border effect -->
+    <item android:left="4dp" android:right="4dp" android:top="4dp" android:bottom="4dp">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/buttonGradientEnd"
+                android:startColor="@color/buttonGradientStart"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>
